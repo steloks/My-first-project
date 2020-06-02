@@ -1,0 +1,128 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    position: relative;
+    background-color: #EEEEEE;
+    height: 100%;
+}
+
+//.followershold{
+//    position: fixed;
+//}
+
+.box-icon .bx, .box-icon .box-label {
+    vertical-align: middle;
+    display: inline-block;
+    -moz-transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+#chatnav {
+    background-color: #4aa0e6;
+
+    padding-right: 10px;
+}
+
+
+.followers-holder {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 6px;
+    height: 800px;
+    width: 450px;
+    position: fixed;
+
+}
+
+.post-holder {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-top: 20px;
+
+
+    &:first-child {
+        margin-top: unset;
+    }
+
+    .nav {
+        .title, img {
+            display: inline-block;
+            vert-align: middle;
+        }
+
+        img {
+            max-width: 50px;
+        }
+    }
+
+    .img-holder {
+        text-align: center;
+        margin-top: 10px;
+
+        img {
+            max-width: 400px;
+        }
+    }
+}
+
+.post-holder, .test {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.test {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.messageList {
+    margin: 0px 10px;
+    height: 400px;
+    max-height: 400px;
+    overflow-y: scroll;
+    .item {
+        padding: 6px 12px;
+        margin-top: 15px;
+        color: #fff;
+        border-radius: 8px;
+
+        width: 70%;
+
+        &.right {
+            background-color: #2196F3;
+            text-align: right;
+            margin-left: 30%;
+        }
+
+        &.left {
+            background-color: #BDBDBD;
+
+            .message {
+                margin-right: 5px;
+            }
+        }
+
+        .img, .message {
+            display: inline-block;
+        }
+
+        .img {
+            width: 40px;
+        }
+
+        .message {
+            width: calc(100% - 50px);
+        }
+    }
+}
